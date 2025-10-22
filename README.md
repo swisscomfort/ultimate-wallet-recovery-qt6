@@ -82,7 +82,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6.git
+git clone https://github.com/swisscomfort/ultimate-wallet-recovery-qt6.git
 cd ultimate-wallet-recovery-qt6
 
 # 2. Create virtual environment
@@ -300,7 +300,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ```bash
 # Clone and setup
-git clone https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6.git
+git clone https://github.com/swisscomfort/ultimate-wallet-recovery-qt6.git
 cd ultimate-wallet-recovery-qt6
 python -m venv dev-env
 source dev-env/bin/activate
@@ -346,8 +346,8 @@ This tool is for **legitimate wallet recovery only**. Unauthorized access to cry
 ## 📞 Support
 
 ### Community
-- **Issues**: [GitHub Issues](https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6/discussions)
+- **Issues**: [GitHub Issues](https://github.com/swisscomfort/ultimate-wallet-recovery-qt6/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/swisscomfort/ultimate-wallet-recovery-qt6/discussions)
 
 ### Important
 - ❌ We **cannot** help recover wallets without proper seed phrases
@@ -371,6 +371,6 @@ If this project helped you recover your wallet, please consider:
 
 **Made with ❤️ by the crypto recovery community**
 
-[Report Bug](https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6/issues) • [Request Feature](https://github.com/YOUR-USERNAME/ultimate-wallet-recovery-qt6/issues) • [Read Docs](docs/)
+[Report Bug](https://github.com/swisscomfort/ultimate-wallet-recovery-qt6/issues) • [Request Feature](https://github.com/swisscomfort/ultimate-wallet-recovery-qt6/issues) • [Read Docs](docs/)
 
 </div>
