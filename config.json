@@ -1,0 +1,364 @@
+{
+  "version": "3.0.0-ultimate",
+  "app_name": "Ultimate Wallet Recovery Tool - Enterprise Edition",
+  "api_keys_note": "API keys are now loaded from environment variables or .env file for security",
+  "default_settings": {
+    "theme": "dark",
+    "language": "english",
+    "derivation_mode": "Standard (BIP44)",
+    "rate_limit": 1.2,
+    "timeout": 15,
+    "auto_refresh": false,
+    "refresh_interval": 300,
+    "desktop_notifications": true,
+    "sound_notifications": false,
+    "max_concurrent_scans": 3,
+    "backup_results": true,
+    "encryption_enabled": true
+  },
+  "networks": [
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "type": "evm",
+      "coin_type": 60,
+      "explorer_api": "https://api.etherscan.io/api",
+      "coingecko_id": "ethereum",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Bitcoin",
+      "symbol": "BTC", 
+      "type": "bitcoin",
+      "coin_type": 0,
+      "explorer_api": "https://blockstream.info/api",
+      "coingecko_id": "bitcoin",
+      "decimals": 8,
+      "enabled": true
+    },
+    {
+      "name": "BNB Smart Chain",
+      "symbol": "BNB",
+      "type": "evm", 
+      "coin_type": 714,
+      "explorer_api": "https://api.bscscan.com/api",
+      "coingecko_id": "binancecoin",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Polygon",
+      "symbol": "MATIC",
+      "type": "evm",
+      "coin_type": 966,
+      "explorer_api": "https://api.polygonscan.com/api", 
+      "coingecko_id": "matic-network",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "type": "evm",
+      "coin_type": 60,
+      "explorer_api": "https://api.arbiscan.io/api",
+      "coingecko_id": "arbitrum",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Optimism", 
+      "symbol": "OP",
+      "type": "evm",
+      "coin_type": 60,
+      "explorer_api": "https://api-optimistic.etherscan.io/api",
+      "coingecko_id": "optimism",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Avalanche C-Chain",
+      "symbol": "AVAX",
+      "type": "evm",
+      "coin_type": 60,
+      "explorer_api": "https://api.snowtrace.io/api",
+      "coingecko_id": "avalanche-2", 
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Fantom",
+      "symbol": "FTM",
+      "type": "evm",
+      "coin_type": 60,
+      "explorer_api": "https://api.ftmscan.com/api",
+      "coingecko_id": "fantom",
+      "decimals": 18,
+      "enabled": true
+    },
+    {
+      "name": "Litecoin",
+      "symbol": "LTC",
+      "type": "bitcoin",
+      "coin_type": 2,
+      "explorer_api": "https://litecoinspace.org/api",
+      "coingecko_id": "litecoin",
+      "decimals": 8,
+      "enabled": true
+    },
+    {
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "type": "bitcoin", 
+      "coin_type": 3,
+      "explorer_api": "https://dogechain.info/api",
+      "coingecko_id": "dogecoin",
+      "decimals": 8,
+      "enabled": false
+    },
+    {
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "type": "bitcoin",
+      "coin_type": 145,
+      "explorer_api": "https://api.blockchair.com/bitcoin-cash",
+      "coingecko_id": "bitcoin-cash",
+      "decimals": 8,
+      "enabled": false
+    }
+  ],
+  "derivation_paths": {
+    "Standard (BIP44)": {
+      "type": "bip44",
+      "purpose": 44,
+      "account": 0,
+      "change": 0,
+      "count": 5,
+      "description": "Standard HD wallet derivation"
+    },
+    "Extended (10 Addresses)": {
+      "type": "bip44", 
+      "purpose": 44,
+      "account": 0,
+      "change": 0,
+      "count": 10,
+      "description": "Extended scan for active wallets"
+    },
+    "Deep Scan (20 Addresses)": {
+      "type": "bip44",
+      "purpose": 44, 
+      "account": 0,
+      "change": 0,
+      "count": 20,
+      "description": "Deep scan for legacy wallets"
+    },
+    "Bitcoin Legacy (P2PKH)": {
+      "type": "bip44",
+      "purpose": 44,
+      "account": 0,
+      "change": 0, 
+      "count": 10,
+      "description": "Bitcoin Legacy addresses"
+    },
+    "Bitcoin SegWit (P2SH)": {
+      "type": "bip49",
+      "purpose": 49,
+      "account": 0,
+      "change": 0,
+      "count": 10,
+      "description": "Bitcoin SegWit wrapped in P2SH"
+    },
+    "Bitcoin Native SegWit (P2WPKH)": {
+      "type": "bip84",
+      "purpose": 84,
+      "account": 0,
+      "change": 0,
+      "count": 10,
+      "description": "Bitcoin Native SegWit"
+    },
+    "Bitcoin Taproot (P2TR)": {
+      "type": "bip86",
+      "purpose": 86,
+      "account": 0,
+      "change": 0,
+      "count": 10,
+      "description": "Bitcoin Taproot addresses"
+    },
+    "Hardware Wallets": {
+      "type": "bip44",
+      "purpose": 44,
+      "account": 0,
+      "change": 0,
+      "count": 5,
+      "description": "Optimized for hardware wallets"
+    },
+    "Multi-Account Scan": {
+      "type": "multi",
+      "purpose": 44,
+      "account": 3,
+      "change": 2,
+      "count": 5,
+      "description": "Scan multiple accounts and change addresses"
+    },
+    "Custom Configuration": {
+      "type": "custom",
+      "purpose": 44,
+      "account": 0,
+      "change": 0,
+      "count": 5,
+      "description": "User-defined configuration"
+    }
+  },
+  "themes": {
+    "dark": {
+      "name": "Dark Professional",
+      "bg": "#1a1a1a",
+      "fg": "#ffffff", 
+      "accent": "#00d4aa",
+      "button_bg": "#2d2d2d",
+      "button_fg": "#ffffff",
+      "button_hover": "#3d3d3d",
+      "danger_bg": "#ff4757",
+      "success_bg": "#2ed573",
+      "warning_bg": "#ffa502",
+      "text_bg": "#2d2d2d",
+      "text_fg": "#ffffff",
+      "text_select": "#00d4aa",
+      "console_bg": "#0d1117",
+      "console_fg": "#c9d1d9",
+      "border": "#30363d"
+    },
+    "light": {
+      "name": "Light Professional",
+      "bg": "#ffffff",
+      "fg": "#2c3e50",
+      "accent": "#3498db",
+      "button_bg": "#ecf0f1",
+      "button_fg": "#2c3e50", 
+      "button_hover": "#bdc3c7",
+      "danger_bg": "#e74c3c",
+      "success_bg": "#27ae60",
+      "warning_bg": "#f39c12",
+      "text_bg": "#ffffff",
+      "text_fg": "#2c3e50",
+      "text_select": "#3498db",
+      "console_bg": "#f8f9fa",
+      "console_fg": "#2c3e50",
+      "border": "#dee2e6"
+    },
+    "blue": {
+      "name": "Blue Ocean",
+      "bg": "#0f1419",
+      "fg": "#e6e6e6",
+      "accent": "#00d4ff",
+      "button_bg": "#1e2328",
+      "button_fg": "#e6e6e6",
+      "button_hover": "#2e3338",
+      "danger_bg": "#ff6b6b",
+      "success_bg": "#51cf66",
+      "warning_bg": "#ffd43b",
+      "text_bg": "#1e2328",
+      "text_fg": "#e6e6e6",
+      "text_select": "#00d4ff",
+      "console_bg": "#0d1117",
+      "console_fg": "#58a6ff",
+      "border": "#21262d"
+    },
+    "green": {
+      "name": "Matrix Green",
+      "bg": "#0d1b0d",
+      "fg": "#e8f5e8",
+      "accent": "#00ff88",
+      "button_bg": "#1a2e1a",
+      "button_fg": "#e8f5e8",
+      "button_hover": "#2a3e2a",
+      "danger_bg": "#ff5555",
+      "success_bg": "#50fa7b",
+      "warning_bg": "#f1fa8c",
+      "text_bg": "#1a2e1a",
+      "text_fg": "#e8f5e8",
+      "text_select": "#00ff88",
+      "console_bg": "#0a1a0a",
+      "console_fg": "#50fa7b",
+      "border": "#2a3e2a"
+    },
+    "purple": {
+      "name": "Royal Purple",
+      "bg": "#1a0d1a",
+      "fg": "#f5e8f5",
+      "accent": "#bd93f9",
+      "button_bg": "#2e1a2e",
+      "button_fg": "#f5e8f5",
+      "button_hover": "#3e2a3e",
+      "danger_bg": "#ff5555",
+      "success_bg": "#50fa7b",
+      "warning_bg": "#ffb86c",
+      "text_bg": "#2e1a2e",
+      "text_fg": "#f5e8f5",
+      "text_select": "#bd93f9",
+      "console_bg": "#1a0a1a",
+      "console_fg": "#bd93f9",
+      "border": "#3e2a3e"
+    }
+  },
+  "ai_settings": {
+    "enabled": true,
+    "max_reconstructions": 100,
+    "confidence_threshold": 0.7,
+    "word_similarity_cutoff": 0.6,
+    "pattern_learning": true,
+    "auto_correction": true,
+    "multi_language_support": true
+  },
+  "security": {
+    "encryption_algorithm": "AES-256",
+    "key_derivation": "PBKDF2",
+    "iterations": 100000,
+    "salt_length": 32,
+    "secure_deletion": true,
+    "memory_protection": true,
+    "audit_logging": true,
+    "session_timeout": 3600
+  },
+  "performance": {
+    "max_concurrent_requests": 5,
+    "request_timeout": 15,
+    "retry_attempts": 3,
+    "cache_enabled": true,
+    "cache_duration": 300,
+    "batch_size": 10,
+    "thread_pool_size": 4
+  },
+  "logging": {
+    "level": "INFO",
+    "file_enabled": true,
+    "console_enabled": true,
+    "max_file_size": "10MB",
+    "backup_count": 5,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "backup": {
+    "enabled": true,
+    "interval": "daily",
+    "retention_days": 30,
+    "compression": true,
+    "encryption": true,
+    "location": "./backups/"
+  },
+  "notifications": {
+    "desktop_enabled": true,
+    "sound_enabled": false,
+    "email_enabled": false,
+    "telegram_enabled": false,
+    "webhook_enabled": false
+  },
+  "enterprise": {
+    "multi_user": false,
+    "rbac_enabled": false,
+    "sso_enabled": false,
+    "api_enabled": false,
+    "compliance_mode": false,
+    "audit_trail": true
+  }
+}

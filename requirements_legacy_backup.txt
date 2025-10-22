@@ -1,0 +1,48 @@
+# requirements.txt
+# Ultimate Wallet Recovery Tool - Enterprise Edition
+# Complete dependency list for all features
+
+# Core Blockchain Libraries
+bip_utils>=2.9.0
+bitcoinlib>=0.7.4
+
+# Cryptography and Security
+cryptography>=45.0.0
+pycryptodome>=3.23.0
+
+# GUI and Interface
+pillow>=11.2.0
+
+# QR Code Support
+qrcode>=8.2
+
+# HTTP Requests
+requests>=2.32.0
+
+# Database
+sqlalchemy>=2.0.41
+sqlite3  # Usually included with Python
+
+# Mathematical Operations
+numpy>=1.26.4
+fastecdsa>=3.0.1
+
+# Additional Utilities
+python-dateutil>=2.8.0
+colorama>=0.4.6
+python-dotenv>=1.0.0
+
+# File type detection
+python-magic>=0.4.27
+
+# Optional: Advanced Features
+# matplotlib>=3.8.0  # For charts and graphs
+# plotly>=5.17.0     # For interactive charts
+# pandas>=2.1.0      # For data analysis
+# openpyxl>=3.1.0    # For Excel export
+# python-telegram-bot>=20.0  # For Telegram notifications
+
+# Development and Testing
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0

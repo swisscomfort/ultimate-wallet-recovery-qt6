@@ -1,0 +1,167 @@
+# Ultimate Wallet Recovery Tool - Qt6 Edition# requirements.txt
+
+# Python Dependencies# Ultimate Wallet Recovery Tool - Enterprise Edition
+
+# Complete dependency list for all features
+
+# =====================================
+
+# CORE DEPENDENCIES (Required)# Core Blockchain Libraries
+
+# =====================================bip_utils>=2.9.0
+
+bitcoinlib>=0.7.4
+
+# Blockchain Libraries
+
+bip-utils>=2.9.0,<3.0.0# Cryptography and Security
+
+bitcoinlib>=0.6.15,<=0.7.4cryptography>=45.0.0
+
+pycryptodome>=3.23.0
+
+# Cryptography & Security
+
+cryptography>=45.0.0,<46.0.0# GUI and Interface
+
+pycryptodome>=3.23.0,<4.0.0pillow>=11.2.0
+
+
+
+# Qt6 GUI Framework# QR Code Support
+
+PyQt6>=6.6.0,<7.0.0qrcode>=8.2
+
+PyQt6-WebEngine>=6.6.0,<7.0.0
+
+PyQtGraph>=0.13.3,<0.14.0# HTTP Requests
+
+requests>=2.32.0
+
+# Async HTTP Client
+
+aiohttp>=3.9.0,<4.0.0# Database
+
+requests>=2.32.0,<3.0.0sqlalchemy>=2.0.41
+
+sqlite3  # Usually included with Python
+
+# QR Code Support
+
+qrcode[pil]>=8.2,<9.0# Mathematical Operations
+
+Pillow>=11.2.0,<12.0.0numpy>=1.26.4
+
+fastecdsa>=3.0.1
+
+# Database ORM
+
+sqlalchemy>=2.0.41,<3.0.0# Additional Utilities
+
+python-dateutil>=2.8.0
+
+# Utilitiescolorama>=0.4.6
+
+python-dotenv>=1.0.0,<2.0.0python-dotenv>=1.0.0
+
+python-dateutil>=2.8.0,<3.0.0
+
+# File type detection
+
+# Markdown Renderingpython-magic>=0.4.27
+
+markdown>=3.5.0,<4.0.0
+
+# Optional: Advanced Features
+
+# =====================================# matplotlib>=3.8.0  # For charts and graphs
+
+# OPTIONAL DEPENDENCIES# plotly>=5.17.0     # For interactive charts
+
+# =====================================# pandas>=2.1.0      # For data analysis
+
+# openpyxl>=3.1.0    # For Excel export
+
+# Forensic Analysis (Linux)# python-telegram-bot>=20.0  # For Telegram notifications
+
+python-magic>=0.4.27; sys_platform == 'linux'
+
+pyinotify>=0.9.6; sys_platform == 'linux'# Development and Testing
+
+# pytest>=7.4.0
+
+# =====================================# black>=23.0.0
+
+# DEVELOPMENT DEPENDENCIES (Optional)# flake8>=6.0.0
+
+# =====================================
+# Uncomment for development:
+
+# Testing
+# pytest>=7.4.0,<8.0.0
+# pytest-qt>=4.2.0,<5.0.0
+# pytest-asyncio>=0.21.0,<0.22.0
+# pytest-cov>=4.1.0,<5.0.0
+
+# Code Quality
+# black>=23.7.0,<24.0.0
+# flake8>=6.0.0,<7.0.0
+# mypy>=1.5.0,<2.0.0
+# isort>=5.12.0,<6.0.0
+
+# =====================================
+# FUTURE ENHANCEMENTS (Not yet used)
+# =====================================
+# Uncomment when implementing:
+
+# Data Visualization
+# matplotlib>=3.8.0,<4.0.0
+# plotly>=5.17.0,<6.0.0
+
+# Data Analysis
+# pandas>=2.1.0,<3.0.0
+# numpy>=1.26.4,<2.0.0
+
+# Export Formats
+# openpyxl>=3.1.0,<4.0.0     # Excel export
+# reportlab>=4.0.0,<5.0.0    # PDF generation
+
+# =====================================
+# INSTALLATION INSTRUCTIONS
+# =====================================
+
+# Minimal Installation (Core only):
+#   pip install PyQt6 bip-utils cryptography aiohttp requests qrcode[pil] python-dotenv
+
+# Standard Installation (Recommended):
+#   pip install -r requirements.txt
+
+# Development Installation:
+#   pip install -r requirements.txt
+#   pip install pytest pytest-qt black flake8 mypy
+
+# Verify Installation:
+#   python -c "import PyQt6; import bip_utils; print('✅ Installation successful')"
+
+# =====================================
+# PLATFORM-SPECIFIC NOTES
+# =====================================
+
+# Linux:
+#   - python-magic requires libmagic: sudo apt-get install libmagic1
+#   - pyinotify requires inotify: included in modern Linux kernels
+
+# macOS:
+#   - python-magic requires libmagic: brew install libmagic
+#   - Qt6 requires macOS 11+ (Big Sur or later)
+
+# Windows:
+#   - Some forensic features may have limited functionality
+#   - Qt6 requires Windows 10 1809+ or Windows 11
+
+# =====================================
+# VERSION COMPATIBILITY
+# =====================================
+# Python: 3.11+
+# Qt: 6.6+
+# Tested on: Ubuntu 22.04, macOS Sonoma, Windows 11

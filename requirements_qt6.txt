@@ -1,0 +1,68 @@
+# Ultimate Wallet Recovery Tool - Qt6 Edition
+# Complete dependency list
+
+# === CORE DEPENDENCIES ===
+# Blockchain
+bip-utils>=2.9.0
+bitcoinlib<=0.7.4
+
+# Cryptography & Security
+cryptography>=45.0.0
+pycryptodome>=3.23.0
+
+# Qt6 GUI Framework
+PyQt6>=6.6.0
+PyQt6-WebEngine>=6.6.0
+PyQtGraph>=0.13.3
+
+# Async HTTP
+aiohttp>=3.9.0
+requests>=2.32.0
+
+# QR Code Support
+qrcode[pil]>=8.2
+Pillow>=11.2.0
+
+# Database
+sqlalchemy>=2.0.41
+
+# Utilities
+python-dotenv>=1.0.0
+python-dateutil>=2.8.0
+
+# === FORENSIC MODULE ===
+python-magic>=0.4.27
+pyinotify>=0.9.6  # Linux only
+
+# === OPTIONAL ENHANCEMENTS ===
+# Charts and Visualization
+# matplotlib>=3.8.0
+# plotly>=5.17.0
+
+# Data Analysis
+# pandas>=2.1.0
+# numpy>=1.26.4
+
+# Export Formats
+# openpyxl>=3.1.0  # Excel
+# reportlab>=4.0.0  # PDF
+
+# === DEVELOPMENT (uncomment for dev) ===
+# pytest>=7.4.0
+# pytest-qt>=4.2.0
+# pytest-asyncio>=0.21.0
+# black>=23.7.0
+# flake8>=6.0.0
+# mypy>=1.5.0
+
+# === INSTALLATION NOTES ===
+# Minimal installation:
+#   pip install PyQt6 bip-utils cryptography aiohttp requests qrcode[pil]
+#
+# Full installation:
+#   pip install -r requirements_qt6.txt
+#
+# Development:
+#   pip install -r requirements_qt6.txt
+#   pip install pytest pytest-qt black flake8
+markdown>=3.5.0
